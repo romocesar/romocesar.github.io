@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jimcel Tangonan</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_movement.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html"> Home </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" role="button" aria-haspopup="true" aria-expanded="false">
+              Projects
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="Preview">
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="game.html">Predict NHL Playoffs</a></li>
+              <li><a href="music.html">Worldwide Music Genres</a></li>
+              <li><a href="hawaii.html">Hawaiian Climate</a></li>
+              <li><a href="news.html">Data Journalism</a></li>
+            </ul>
+          </li>
+          
+       
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 title_div ">
+        <h3> Hawaiian Climate </h3>
+        <p>Collect precipitation and climate data from weather stations to plan an ideal time to visit the islands. </p>
+        <button type="button" onclick="window.location.href='https://github.com/jiinro/hawaii-climate-analysis'" class="code_btn" style="vertical-align:middle"> <span>View Code </span></button>
+      </div>
+    </div>
+
+    <br>
+    <div class="row module">
+      <div class="col-md-12 built_with" align = 'center'>
+        <ul class="list-inline">
+          <li class="bold-list"> Built With: </li>
+          <li>&bull; Python </li>
+          <li>&bull; MySQL </li>
+          <li>&bull; SQLAlchemy </li>
+          <li>&bull; Flask </li>
+          <li>&bull; HTML </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" align = 'center'>
+          <h3>Precipitation Analysis</h3>
+          <p>Designed a query to retrieve the last 12 months of precipitation data, loaded it onto the Pandas DataFrame, 
+            and set the index to the date.</p>
+          <img src="hawaii/prep_analysis.png" class="prep_analysis">
+          <br>
+          <h3>Station Analysis</h3>
+          <p>Designed a query to calculate total number of stations and the most active. <br>Then retrieved the last 12 months of temperature observation data. 
+            Lastly, filtered witht he highest number of observations.</p>
+          <img src="hawaii/station_analysis.png" class="station_analysis">
+          <br>
+          <h3>Temperature Analysis</h3>
+          <p>Calculated the min, avg, and max temperatures using matching dates from the previous year and plotted results with an error bar.</p>
+          <img src="hawaii/avg_temp.png" class="avg_temp">
+        </div>
+      </div>
+
+
+
+
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
+
