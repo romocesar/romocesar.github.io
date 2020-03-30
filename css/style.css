@@ -1,0 +1,35 @@
+/*"import fonts from fonts.css file"*/
+@import url(./fonts.css);
+
+/* import css variables*/
+@import url(./partials/_variables.css);
+
+
+/* *Header Section */
+/* Navigation area */
+.header_area .main-menu .navbar-brand{
+    font-family: var(--roboto);
+    padding: 0 2rem 0 2rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    padding: 1.2rem 3rem;
+}
+
+.btn-group {
+    padding: .8rem 3rem;
+}
+
+/* Header Section* */
+
+/* *Main Section */
+.site-banner{
+    padding: 8rem 8rem;
+}
+
+.site-banner .site-buttons{
+    padding: 3rem 0rem;
+}
+
+
+/* Main Section* */
