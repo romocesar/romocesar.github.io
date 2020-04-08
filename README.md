@@ -1,6 +1,6 @@
 (English)
 # Personal Portfolio
-- romocesar.github.io is a personal website that showcases personal and team projects, business ventures, professional experience and skills I have acquired through practice.
+- [My Personal Website](romocesar.github.io) that showcases personal and team projects, business ventures, professional experience and skills I have acquired through practice.
 
 ## Main purposes
 
