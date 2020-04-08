@@ -18,6 +18,6 @@ git clone this repository to create a website of yours based on my own.
 Made with figma.com
 
 - Mobile version v1.0.0
-![Mobile Frame #1](design/Mobile_F1)
+![Mobile Frame #1](design/Mobile_F1.PNG)
 
 (Español)
