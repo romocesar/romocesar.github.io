@@ -9,10 +9,14 @@
 
     <!-- Bootstrap css file-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Custom Stylesheets for responsive displays -->
+    <link rel="stylesheet" media="(max-width: 400px)" href="./css/max-640px.css">  <!-- When the browser is between 0px and 640px wide -->
+    <link rel="stylesheet" media="(min-width: 400px)" href="./css/min-400px.css">  <!-- When the browser is 640px or wider -->
+    <link rel="stylesheet" media="(orientation: portrait)" href="./css/portrait.css">  <!-- When the browser width is greater than the height -->
+    <link rel="stylesheet" media="(orientation: landscape)" href="./css/landscape.css"> <!-- When the browser height is greater than the width -->
 
     <!-- Custom Stylesheet file link after Bootstrap to overwrite it-->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -20,95 +24,149 @@
     <!-- +++++++++++++++++++++++ Navigation Area +++++++++++++++++++++++++-->    
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">C R</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <div class="mr-auto"></div>
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Bootstrap Toggle buttons -->
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-secondary active" style="background-color: #D76C00">
-                              <input type="radio" name="options" id="option1" autocomplete="off"> Español
-                            </label>
-                            <label class="btn btn-secondary" style="background-color: #026886">
-                              <input type="radio" name="options" id="option2" autocomplete="off" checked> English
-                            </label>                           
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                    </li>
-                  </ul>
-                  <div class="mr-auto"></div>
-                </div>
-              </nav>
+            <nav> 
+              <ul class="menu-items">                
+                <li>
+                  <a href="#">Projects</a>
+                </li>
+                <li>
+                  <a href="#">Experience</a>
+                </li>
+                <li>
+                  <a href="#">Skills</a>
+                </li>
+              </ul> 
+              <!-- Bootstrap Toggle buttons -->
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active" style="background-color: #D76C00">
+                  <input type="radio" name="options" id="option1" autocomplete="off"> Español
+                </label>
+                <label class="btn btn-secondary" style="background-color: #026886">
+                  <input type="radio" name="options" id="option2" autocomplete="off" checked> English
+                </label>                           
+              </div>
+            </nav>
         </div>
     </header>
-    <!-- ####################### Header Section* ##########################-->
-    
+    <!-- ####################### Header Section* ##########################-->    
 
-    <!-- ####################### *Main Section ############################-->
-     
+    <!-- ####################### *Main Section ############################-->     
     <main class="main-site">
-    <!-- +++++++++++++++++++++++ Banner Area ++++++++++++++++++++++++++++++-->
+        <!-- +++++++++++++++++++++++ Banner Area ++++++++++++++++++++++++++++++-->
         <section class="site-banner">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 site-title">
-                        <h3 class="title-text">H E Y ,  I &nbsp A M</h3>
-                        <h1 class="title-text text-uppercase">C e s a r</h1>
-                        <h4 class="title-text text-uppercase">R o m o</h4>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <img src="img/myAvatar.png" alt="Avatar Me" class="img-fluid"> 
-                    </div>                                            
-                </div>
-                <div class ="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="site-buttons">
-                          <div class="d-flex flex-row flex-wrap">
-                              <a href ="https://www.linkedin.com/in/romocesar" target="_blank"><button title="LinkedIn" type="button"  class="btn button primary-button mr-4 text-uppercase" style="background: url(img/linkedin.png) no-repeat;">                                   
-                              </button></a>                                
-                              <a href ="https://github.com/romocesar" target="_blank"><button title="Github" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/github.png) no-repeat;">                                    
-                              </button></a>
-                              <a href ="https://medium.com/@cesarromocontreras_90649" target="_blank"><button title="Medium blog/articles" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/medium.png) no-repeat;">                                    
-                              </button></a>                               
-                              <a href ="https://twitter.com/cesarromo10" target="_blank"><button title="Twitter" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/twitter.png) no-repeat;">                                    
-                              </button></a>
-                              <a href ="https://www.facebook.com/cesarromo10" target="_blank"><button title="Facebook" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/facebook.png) no-repeat;">
-                              </button></a>                             
-                              <a href ="https://www.instagram.com/cesarromo10/" target="_blank"><button title="Instagram" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/instagram.png) no-repeat;">
-                              </button></a>
-                          </div>
-                      </div>
-                   </div>
-                </div>
+              <img src="img/myAvatar.png" alt="Avatar Me" class="avatar">
+              <h1>Hi, my name is <span class="orange-mi">Cesar Romo</span> and I am</h1>
+              <h3><span class="green-a">A</span><span class="orange-mi">mi</span><span class="red-go">go</span>. Engineer. Entrepreneur. Businessman.</h3>
+              <div class="btn-group btn-group-toggle" id="get-in-touch" data-toggle="buttons">
+                <label class="btn btn-secondary active" style="background-color: #D76C00">
+                  <input type="radio" name="options" autocomplete="off"> Get in Touch
+                </label>
+              </div>
+              <a href ="https://www.linkedin.com/in/romocesar" target="_blank"><button title="LinkedIn" type="button"  class="btn button primary-button mr-4 text-uppercase" style="background: url(img/linkedin.png) no-repeat;">                                   
+              </button></a>                                
+              <a href ="https://github.com/romocesar" target="_blank"><button title="Github" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/github.png) no-repeat;">                                    
+              </button></a>
+              <a href ="https://medium.com/@cesarromocontreras_90649" target="_blank"><button title="Medium blog/articles" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/medium.png) no-repeat;">                                    
+              </button></a>                               
+              <a href ="https://twitter.com/cesarromo10" target="_blank"><button title="Twitter" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/twitter.png) no-repeat;">                                    
+              </button></a>
+              <a href ="https://www.facebook.com/cesarromo10" target="_blank"><button title="Facebook" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/facebook.png) no-repeat;">
+              </button></a>                             
+              <a href ="https://www.instagram.com/cesarromo10/" target="_blank"><button title="Instagram" type="button" class="btn button primary-button mr-4 text-uppercase" style="background: url(img/instagram.png) no-repeat;">
+              </button></a>
             </div>
         </section>
+        <!-- +++++++++++++++++++++++ What I Do Area ++++++++++++++++++++++++++++++-->
+        <section class="whatido-area">
+          <div class="container">
+            <h1>What I do ...</h1>
+            <h3>Grow businesses and innovate through Software, Digital Marketing, Branding and <span>Business Intelligence</span>.</h3>
+          </div>
+        </section>
+        <!-- +++++++++++++++++++++++ Projects Area ++++++++++++++++++++++++++++++-->
+        <section class="projects-area">
+          <div class="container">
+            <h2>Projects</h2>
+            <!-- Circle Figure with Project 1 Logo -->
+            <h3> Women's clothes Ecommerce store and marketing in Mexico </h3>
+            <h5>Bacon ipsum dolor amet brisket venison leberkas tail spare ribs,
+               kevin bacon beef ribs pork fatback drumstick porchetta. Corned beef pork chop burgdoggen salami. </h5>
+            <!-- Circle Figure with Project 2 Logo -->
+            <h3> Supplier Catalog Desktop Application</h3>
+            <h5>Bacon ipsum dolor amet brisket venison leberkas tail spare ribs,
+               kevin bacon beef ribs pork fatback drumstick porchetta. Corned beef pork chop burgdoggen salami. </h5>
+            <!-- Circle Figure with Project 2 Logo -->
+            <h3> Interactive Business Intelligence Dashboard for Veterinary products company in Mexico </h3>
+            <h5>Bacon ipsum dolor amet brisket venison leberkas tail spare ribs,
+               kevin bacon beef ribs pork fatback drumstick porchetta. Corned beef pork chop burgdoggen salami. </h5>
+          </div>
+        </section>
+        <!-- +++++++++++++++++++++++ Experience Area ++++++++++++++++++++++++++++++-->
+        <section class="experience-area">
+          <div class="container">
+            <h2>Experience</h1>
+            <!-- Circle Figure -->
+            <!-- Line Figure -->
+            <h3 class="date">00/00/00</h3>
+            <h5 class="what">What?</h5>
+            <h5 class="accomplishments">Accomplishments</h5>
+            <h5 class="where">Where?</h5>
+
+            <!-- Circle Figure -->
+            <!-- Line Figure -->
+            <h3 class="date">00/00/00</h3>
+            <h5 class="what">What?</h5>
+            <h5 class="accomplishments">Accomplishments</h5>
+            <h5 class="where">Where?</h5>
+
+            <!-- Circle Figure -->
+            <!-- Line Figure -->
+            <h3 class="date">00/00/00</h3>
+            <h5 class="what">What?</h5>
+            <h5 class="accomplishments">Accomplishments</h5>
+            <h5 class="where">Where?</h5>
+          </div>
+        </section>
+        <!-- +++++++++++++++++++++++ Skills Area ++++++++++++++++++++++++++++++++++-->
+        <section class="skills-area">
+          <div class="container">
+            <h2>Technical Skills:</h2>
+            <h3>Business Administration</h3>
+            <!-- 5 Circle Figures -->
+            <h3>Sales & Negotiation</h3>
+            <!-- 5 Circle Figures -->
+            <h3>Business Intelligence</h3>
+            <!-- 5 Circle Figures -->
+            <h3>Data Analysis</h3>
+            <!-- 5 Circle Figures -->
+            <h3>Digital Marketing</h3>
+            <!-- 5 Circle Figures -->
+            <h3>Software Engineering</h3>
+            <!-- 5 Circle Figures -->
+            <h3>Web Development</h3>
+            <!-- 5 Circle Figures -->
+            <h3>App Development</h3>
+            <!-- 5 Circle Figures -->           
+            <h3>Common sense</h3>
+            <!-- 5 Circle Figures --> 
+          </div>
+        </section>
     </main>
-    <!-- ####################### Main Section* ############################-->
-    
+    <!-- ####################### Main Section* ############################-->    
 
+    <!-- ####################### Footer Section ##########################-->    
+    <footer class="footer-area">
+      <div class="container">
+    <!-- +++++++++++++++++++++++ More Contact Me +++++++++++++++++++++++++-->
+        <div>
+          
+        </div>
+    <!-- +++++++++++++++++++++++ External Credits +++++++++++++++++++++++++++-->
+        <div class="external-credits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
+    </footer>
     <!-- ####################### Footer Section ##########################-->
-    <!-- +++++++++++++++++++++++ "Text Here" +++++++++++++++++++++++++++-->
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
     
     <!-- Jquery javascript file -->
     <script src=".js/jquery-3.4.1.js"> </script>
