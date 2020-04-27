@@ -83,7 +83,7 @@ h3{
     font-size: 2.25rem;
     padding-top: 0rem;
 }
-.site-banner .container .button{
+.site-banner .container .button, .footer-area .container .button{
     width: 2rem;
     height: 2rem;
     margin-bottom: 2rem;
@@ -93,7 +93,7 @@ h3{
     color: #026886;
 }
 
-.whatido-area .container {
+.whatido-area .container, .projects-area .container, .experience-area .container, .skills-area .container {
     margin-bottom: 4rem;
 }
 .projects-area .container img{
@@ -102,9 +102,7 @@ h3{
     border-color: black;
     margin-top: 1rem;    
 }
-.projects-area .container{
-    margin-bottom: 4rem;  
-}
+
 .experience-area .container h2{
     margin-bottom: 1.5rem;
 }
@@ -116,27 +114,54 @@ h3{
     background: #C4C4C4;
     margin: auto;
 }
-.circle-experience span{
+
+.date-left{
     position: absolute;
-    margin-left: 2rem;
-    margin-top: .25rem;    
+    margin-left: -8rem;
+    margin-top: -1rem;
+    text-align: left; 
+}
+
+.date-right{
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: -1rem;
+    text-align: left;
 }
 
 .line-experience{
-    width: 2px;
-    height: 182px;
+    width: .125rem;
+    height: 12.5rem;
     background: #C4C4C4;
     margin: auto;
 }
 
-.line-experience span{
+.line-experience-last{
+    width: .125rem;
+    height: 15rem;
+    background: #C4C4C4;
+    margin: auto;
+}
+
+/* .line-experience span{
     position: absolute;
     margin-left: -9rem;
     margin-top: .25rem; 
     text-align: left;
+} */
+
+.what-left, .accomplishments-left, .where-left{
+    font-size: 16px;    
+    margin-left: -9rem;
+    margin-top: .25rem; 
+    text-align: left;
 }
-.line-experience .what, .line-experience .accomplishments, .line-experience .where{
-    font-size: 16px;
+
+.what-right, .accomplishments-right, .where-right{
+    font-size: 16px;    
+    margin-left: 3rem;
+    margin-top: .25rem; 
+    text-align: right;
 }
 
 @media (min-width: 400px){
@@ -149,5 +174,7 @@ h3{
 /* Main Section* */
 
 /* *Footer Section */
-
+.external-credits{
+    font-size: .5rem;
+}
 /* Footer Section* */
