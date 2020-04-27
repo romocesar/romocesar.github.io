@@ -93,6 +93,51 @@ h3{
     color: #026886;
 }
 
+.whatido-area .container {
+    margin-bottom: 4rem;
+}
+.projects-area .container img{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    margin-top: 1rem;    
+}
+.projects-area .container{
+    margin-bottom: 4rem;  
+}
+.experience-area .container h2{
+    margin-bottom: 1.5rem;
+}
+
+.circle-experience{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin: auto;
+}
+.circle-experience span{
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: .25rem;    
+}
+
+.line-experience{
+    width: 2px;
+    height: 182px;
+    background: #C4C4C4;
+    margin: auto;
+}
+
+.line-experience span{
+    position: absolute;
+    margin-left: -9rem;
+    margin-top: .25rem; 
+    text-align: left;
+}
+.line-experience .what, .line-experience .accomplishments, .line-experience .where{
+    font-size: 16px;
+}
 
 @media (min-width: 400px){
     #get-in-touch{
