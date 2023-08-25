@@ -13,7 +13,7 @@
 
 ## Installation
 
-git clone this repository to create a website of yours based on my own.
+`git clone` this repository to create a website of yours based on my own.
 
 ### UX Design:
 Design made with [Figma](figma.com)
